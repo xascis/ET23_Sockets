@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="ET23_Sockets.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ET23_Sockets"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Margin="10,10,10,10" TextWrapping="Wrap" Text="Sockets" Height="Auto" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold"/>
+        <Button Content="Información" Height="Auto" Margin="10,10,10,10" HorizontalAlignment="Center" FontSize="30" Click="Button_Click"/>
+        <TextBlock x:Name="textCon" HorizontalAlignment="Center" Margin="10,10,10,10" TextWrapping="Wrap" Text="Info" Height="70" Width="340" FontSize="20" FontWeight="Bold"/>
+        <TextBlock x:Name="textInfo" HorizontalAlignment="Center" Margin="10,10,10,0" TextWrapping="Wrap" Text="Info" Height="200" Width="340" FontSize="20"/>
+        <Grid HorizontalAlignment="Center" Margin="10,10,10,10">
+            <Image Source="Assets/rosa_vents.png" HorizontalAlignment="Center" Height="300"/>
+            <Image Source="Assets/manecilla.png" Height="150" Margin="93,16.666,92,133.333" RenderTransformOrigin="0.498,0.893" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="rotacionManecilla" Rotation="30" TranslateX="-0.089" TranslateY="-0.27"/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+
+    </StackPanel>
+</Page>

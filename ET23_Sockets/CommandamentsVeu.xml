@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  
+  <CommandSet xml:lang="es-ES" Name="commSet_esES">
+      <AppName> aplicación domótica </AppName>
+      <Example> aplicación domótica subir persiana comedor 7 </Example>
+
+    <Command Name="pujarPersianes">
+      <Example>Subir persiana comedor siete</Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> Subir [la] persiana {persianesSection} </ListenFor>
+      <Feedback> Subiendo la persiana {persianesSection}</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+
+    <Command Name="baixarPersianes">
+      <Example>Bajar persiana comedor siete</Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">Bajar [la] persiana {persianesSection} </ListenFor>
+      <Feedback> Bajando la persiana {persianesSection}</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+
+    <Command Name="encendreLlum">
+      <Example>Encender luz cocina</Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">Encender [la]  luz {llumsSection} </ListenFor>
+      <Feedback> Encendiendo la luz de {llumsSection}</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+
+    <Command Name="apagarLlum">
+      <Example>Apagar luz cocina</Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">Apagar [la] luz {llumsSection} </ListenFor>
+      <Feedback> Apagando la llum de {llumsSection}</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+
+    <Command Name="informacio">
+      <Example> información meteorológica </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> información meteorológica </ListenFor>
+      <Feedback> Recibiendo informacion </Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+
+    <PhraseList Label="persianesSection">
+      <Item> Dormitorio </Item>
+      <Item> Habitacion </Item>
+      <Item> Estudio </Item>
+      <Item> Comedor una </Item>
+      <Item> Comedor dos </Item>
+      <Item> Comedor tres </Item>
+      <Item> Cocina una </Item>
+      <Item> Cocina dos </Item>
+      <Item> Todas </Item>
+    </PhraseList>
+    
+    <PhraseList Label="llumsSection">
+      <Item> Recibidor </Item>
+      <Item> Pergola </Item>
+      <Item> Comedor </Item>
+      <Item> Cocina </Item>
+      <Item> Exterior norte </Item>
+      <Item> Calle </Item>
+      <Item> Habitacion </Item>
+      <Item> Exterior sur </Item>
+      <Item> Exterior este </Item>
+      <Item> Estudio </Item>
+      <Item> Exterior oeste </Item>
+      <Item> Apliques comedor </Item>
+    </PhraseList>
+
+  </CommandSet>
+
+  </VoiceCommands>
